@@ -5,8 +5,8 @@ var minspan = document.getElementById("min")
 var secspan = document.getElementById("sec")
 var msecspan = document.getElementById("msec")
 var interval;
-
-
+var lapsContainer = document.querySelector('.laps')
+var stopwatchEl = document.querySelector('.stopwatch')
 function timer(){
     msec++
     msecspan.innerHTML = msec
@@ -37,4 +37,12 @@ function reset(){
     secspan.innerHTML = sec
     msecspan.innerHTML = msec
     stop()
-}
+ }
+// function lap(){
+//     if (interval){
+//         var li = document.createElement('li')
+//         li.innerText = stopwatchEl
+//         lapsContainer.appendChild('li')
+
+//     }
+// }
