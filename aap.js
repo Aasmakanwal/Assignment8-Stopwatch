@@ -1,5 +1,5 @@
 var sec = 0;
-var min = 0; 
+var min = 0;  
 var msec = 0;
 var minspan = document.getElementById("min")
 var secspan = document.getElementById("sec")
@@ -20,14 +20,10 @@ function timer(){
         sec = 0 
     }
 }
-
-
 function start(){
     if (!interval){
         interval = setInterval(timer, 10)
     }
-   
-
 }
 function stop(){
     clearInterval(interval)
